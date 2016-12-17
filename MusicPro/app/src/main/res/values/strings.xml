@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MusicPro</string>
+
+    <!-- HomeFragment -->
+    <string name="home_music">音乐</string>
+    <string name="home_constact">好友</string>
+    <string name="home_extra">扩展</string>
+</resources>

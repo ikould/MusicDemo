@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bg">
+
+    <!-- 设置 -->
+    <LinearLayout
+        android:id="@+id/ll_fragment_my"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/dark">
+
+        <FrameLayout
+            android:id="@+id/ll_fragment_my_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <!-- 主界面 -->
+    <LinearLayout
+        android:id="@+id/ll_fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/home_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/home1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:id="@+id/home2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:id="@+id/home3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+        <!-- 底部导航选择器 -->
+        <LinearLayout
+            android:id="@+id/sv_main_table"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_height">
+
+            <com.ikould.frame.widget.StatusButton
+                android:id="@+id/home_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/table_height"
+                android:background="@drawable/table_select"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/home_extra"
+                android:textColor="@color/white" />
+
+            <com.ikould.frame.widget.StatusButton
+                android:id="@+id/home_music"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/table_height"
+                android:background="@drawable/table_select"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/home_music"
+                android:textColor="@color/white" />
+
+            <com.ikould.frame.widget.StatusButton
+                android:id="@+id/home_constact"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/table_height"
+                android:background="@drawable/table_select"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/home_constact"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
